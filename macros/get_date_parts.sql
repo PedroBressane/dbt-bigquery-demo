@@ -1,5 +1,4 @@
 (% macro get_date_parts(date_column) %)
-
 	(SELECT struct(
 		{{ date_column }} AS original_date,
 		EXTRACT(YEAR FROM {{ date_column }}) AS year,
