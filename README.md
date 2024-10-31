@@ -44,7 +44,10 @@ We can create a materialized view too, instead of a table, for this we can creat
 In macros we will store macro codes, you can use this codes inside other model.sql codes, they are speciall for reusability and automation.
 We need to save in macros folder and end file with .sql again. To use it inside a model or view, use  {{get_date_parts('column')}}. 
 
+For test, you can set generic tests in schema.yaml, and specific tests to run in selected models.
+You can run single tests, selected tests or all tests at once.
 
+As for Snapshots, you can fetch the data changing dimensions and store the values in a separated column (like record the change, old value, new value and ID concatenated with timestamp for example) 
 
-
+So, DBT is a powerfull but cheap resource to deal with data, that fits well with decoupled arquitecture or if you don't have powerfull computacional resourcers, fell free to use it and comment!
 
